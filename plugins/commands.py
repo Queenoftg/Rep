@@ -51,7 +51,7 @@ async def start(client, message):
         #     invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         # except ChatAdminRequired:
         #     logger.error("MAKE SURE BOT IS ADMIN IN FORCESUB CHANNEL")
-            return
+        #     return
         btn = [[InlineKeyboardButton("Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ✨", url="https://t.me/The_Happy_Hours")]]
         if message.command[1] != "subscribe":
             try:
