@@ -431,11 +431,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/mkn_bots_updates")
+            InlineKeyboardButton("Sᴇᴀʀᴄʜ", switch_inline_query_current_chat=''), 
+            InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url="https://t.me/The_Happy_Hours")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
-            InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            InlineKeyboardButton("Hᴇʟᴩ", callback_data="help"),
+            InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about")
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
@@ -468,8 +468,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', url='https://github.com/MrMKN/PROFESSOR-BOT')
-            ],[
             InlineKeyboardButton('‹ Bᴀᴄᴋ', 'about')
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.SOURCE_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
@@ -552,7 +550,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✘ Cʟᴏꜱᴇ', 'close_data'),
             InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
         ]]
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.EXTRAMOD_TXT, enums.ParseMode.HTML),             reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.EXTRAMOD_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif query.data == "gpmanager":
         buttons = [[
@@ -574,7 +572,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.edit('ʟᴏᴀᴅɪɴɢ....')
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.STATUS_TXT.format(total, users, chats, monsize, free), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.REPO_TXT.format, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
     
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
