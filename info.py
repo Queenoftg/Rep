@@ -16,8 +16,8 @@ API_HASH = environ.get('API_HASH', 'ec6105bf1a02c98f837300546dc341d1')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7388432028:AAGtDAQzhMYyth98GeC_EhP17kHxA-QCT2E")
 
 # Bot settings
-WEB_SUPPORT = bool(environ.get("WEBHOOK", True)) # for web support on/off
-PICS = (environ.get('PICS' ,'https://i2f9m2t2.rocketcdn.me/wp-content/uploads/2014/04/shutterstock_175386392.jpg')).split()
+WEB_SUPPORT = bool(environ.get("WEBHOOK", 'True')) # for web support on/off
+PICS = (environ.get('PICS' ,'https://graph.org/file/85200d155aa83ec7fcf31.jpg https://graph.org/file/e00d13693a750dffd173e.jpg https://graph.org/file/6cc122002fcd0d6121c41.jpg https://graph.org/file/74240ce55fbf36b121b7c.jpg https://graph.org/file/a0b79abd4be12a51c0093.jpg https://graph.org/file/3cdcb0175e68936ac55fe.jpg')).split()
 UPTIME = time.time()
 
 # Admins, Channels & Users
