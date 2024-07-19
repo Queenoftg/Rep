@@ -204,7 +204,7 @@ Fʀᴇᴇ Dɪꜱᴋ: {}"""
     WELCOM_TEXT = """Wᴇʟᴄᴏᴍᴇ ᴛᴏ Tʜᴇ Hᴀᴘᴘʏ Hᴏᴜʀ
 
 ꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ"""
-  
+    REPO_TXT = """Usᴇ Tʜɪs Cᴏᴍᴍᴇɴᴅ Fᴏʀ Cʜᴀᴄᴋ Sᴛᴀᴛs - /stats"""
     IMDB_TEMPLATE = """🏷 Tɪᴛʟᴇ: {title}
 🎭 Gᴇɴʀᴇꜱ: {genres}
 📆 Yᴇᴀʀ: {year}
