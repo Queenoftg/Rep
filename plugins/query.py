@@ -564,14 +564,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⟳ Rᴇꜰʀᴇꜱʜ', 'stats'),
             InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
         ]]
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit('ʟᴏᴀᴅɪɴɢ....')
+        # total = await Media.count_documents()
+        # users = await db.total_users_count()
+        # chats = await db.total_chat_count()
+        # monsize = await db.get_db_size()
+        # free = 536870912 - monsize
+        # monsize = get_size(monsize)
+        # free = get_size(free)
+        await query.message.edit('ʟᴏᴀᴅɪɴɢ...')
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.REPO_TXT.format, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
     
     elif query.data.startswith("setgs"):
