@@ -1,5 +1,9 @@
 class script(object):  
-    START_TXT = """<b>Mʏ Nᴀᴍᴇ Is Mɪɴᴀᴛᴏ. Wᴇ Aʀᴇ Pʀᴏᴠɪᴅᴇ Aɴʏ Mᴏᴠɪᴇ Sᴇʀɪᴇs Aɴɪᴍᴇ. Wᴇ Aʀᴇ Hᴀᴘᴘʏ Tᴏ Sᴇᴇ Yᴏᴜ Hᴇʀᴇ. Wᴇ Aʀᴇ A Bʀᴀɴᴅ Wʜᴏ Pʀᴏᴠɪᴅᴇ Aʟʟ Kɪɴᴅ Oғ Cᴏɴᴛᴇɴᴛ Tᴏ Mᴇᴍʙᴇʀs Wɪᴛʜ Nᴏ Cᴏsᴛ. Dᴏɴ'ᴛ Fᴏʀɢᴇᴛ Tᴏ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ Aɴᴅ Gᴇᴛ Wʜᴀᴛ Yᴏᴜ Dʀᴇᴀᴍ Iɴ Yᴏᴜʀ Lɪғᴇ....</b>"""
+    START_TXT = """<b>Mʏ Nᴀᴍᴇ Is Mɪɴᴀᴛᴏ. Wᴇ Aʀᴇ Pʀᴏᴠɪᴅᴇ Aɴʏ Mᴏᴠɪᴇ Sᴇʀɪᴇs Aɴɪᴍᴇ. 
+    
+    Wᴇ Aʀᴇ Hᴀᴘᴘʏ Tᴏ Sᴇᴇ Yᴏᴜ Hᴇʀᴇ. Wᴇ Aʀᴇ A Bʀᴀɴᴅ Wʜᴏ Pʀᴏᴠɪᴅᴇ Aʟʟ Kɪɴᴅ Oғ Cᴏɴᴛᴇɴᴛ Tᴏ Mᴇᴍʙᴇʀs Wɪᴛʜ Nᴏ Cᴏsᴛ. 
+    
+    Dᴏɴ'ᴛ Fᴏʀɢᴇᴛ Tᴏ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ Aɴᴅ Gᴇᴛ Wʜᴀᴛ Yᴏᴜ Dʀᴇᴀᴍ Iɴ Yᴏᴜʀ Lɪғᴇ....</b>"""
     
     HELP_TXT = "Hᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
@@ -204,4 +208,6 @@ Fʀᴇᴇ Dɪꜱᴋ: {}"""
     IMDB_TEMPLATE = """🏷 Tɪᴛʟᴇ: {title}
 🎭 Gᴇɴʀᴇꜱ: {genres}
 📆 Yᴇᴀʀ: {year}
-🌟 Rᴀᴛɪɴɢ: {rating}/10"""
+🌟 Rᴀᴛɪɴɢ: {rating}/10
+
+📚 Sᴛᴏʀʏ Lɪɴᴇ: {plot}"""
