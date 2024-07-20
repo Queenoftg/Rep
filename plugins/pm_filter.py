@@ -81,17 +81,17 @@ async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
     if movie_ == "close_spellcheck":
         return await query.message.delete()
-    movies = temp.PM_SPELL.get(str(query.message.reply_to_message.id))
+    movies = PM_SPELL.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("Yᴏᴜ Aʀᴇ Usɪɴɢ Oɴᴇ Oғ Mʏ Oʟᴅ Mᴇssᴀɢᴇs, Pʟᴇᴀsᴇ Sᴇɴᴅ Tʜᴇ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ", show_alert=True)
+        return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ...')
+    await query.answer('Checking for Movie in database...')
     files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
     if files:
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await query.message.edit('Tʜɪs Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ Iɴ Dᴀᴛᴀʙᴀsᴇ')
+        k = await query.message.edit('This Movie Not Found In DataBase')
         await asyncio.sleep(10)
         await k.delete()
 
