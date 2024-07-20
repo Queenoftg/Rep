@@ -571,7 +571,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # monsize = get_size(monsize)
         # free = get_size(free)
         await query.message.edit('ʟᴏᴀᴅɪɴɢ...')
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.REPO_TXT.format, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.REPO_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
     
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
