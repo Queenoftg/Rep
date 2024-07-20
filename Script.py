@@ -205,7 +205,7 @@ Fʀᴇᴇ Dɪꜱᴋ: {}"""
 
 ꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ"""
     
-    REPO_TXT = """Usᴇ Tʜɪs Cᴏᴍᴍᴇɴᴅ Fᴏʀ Cʜᴀᴄᴋ Sᴛᴀᴛs - /stats"""
+    REPO_TXT = """<b>Usᴇ Cᴏᴍᴍᴇɴᴅ Fᴏʀ Sᴛᴀᴛs - /stats</b>"""
     
     IMDB_TEMPLATE = """🏷 Tɪᴛʟᴇ: {title}
 🎭 Gᴇɴʀᴇꜱ: {genres}
