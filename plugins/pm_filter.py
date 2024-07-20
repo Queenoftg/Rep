@@ -76,7 +76,7 @@ async def pm_next_page(bot, query):
     await query.answer()
 
 
-@Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("pmspolling")))
+@Client.on_callback_query(filters.regex(r"^pmspolling"))
 async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
     if movie_ == "close_spellcheck":
